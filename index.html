@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>JavaScript Quiz</h1>
+        <div class="hiS"> <button id="viewHiS" type="button">View Highscores</button>
+        <p class="counter" id="counter">Time: 60s</p> </div>
+    </header>
+
+    <section id="startScreen" class="startScreen">
+        <h1>Welcome to the Javascript Quiz!</h1>
+            <p>Attempt to answer all question before the time ends!</p>
+            <p>You lose 10 seconds for answering a question incorrectly!</p>
+            <p>You gain 5 seconds foranswering a question incorrectly!</p>
+        <button id="startButton" type="button">Start</button>
+    </section>
+
+    <section id="questionSect" class="questionSect">
+        <h2 id="question">Question</h2>
+        <ul>
+            <li> <button id="a" type="button" class="btn">a.</button> </li>
+            <li> <button id="b" type="button" class="btn">b.</button> </li>
+            <li> <button id="c" type="button" class="btn">c.</button> </li>
+            <li> <button id="d" type="button" class="btn">d.</button> </li>
+        </ul>
+        <div id="check">
+            
+        </div>
+    </section>
+
+    <section id="endScreen" class="endScreen">
+        <div>
+            <h2>You finished the quiz!</h2>
+            <p>You got a score of: <b><span id="endScore">0</span></b></p>
+            <p>
+                <input placeholder="Your initials" id="input"/>
+                <button id="finish" type="button" class="finish">Finish</button>
+            </p>
+        </div>
+    </section>
+
+    <section id="scores" class="scores">
+        <div>
+            <h2>High Scores:</h2>
+            <ol id="scoreList"></ol>
+            <button id="restart" type="button" class="restart">Restart</button>
+            <button id="reset" type="button" class="reset">Reset Scores</button>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
